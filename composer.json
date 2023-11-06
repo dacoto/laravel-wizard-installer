@@ -1,0 +1,49 @@
+{
+  "name": "dacoto/laravel-wizard-installer",
+  "description": "Laravel wizard installer package",
+  "homepage": "https://dacoto.github.io/laravel-wizard-installer/",
+  "type": "library",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "David Cortés",
+      "email": "dacoto@dacoto.com"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "dacoto\\LaravelWizardInstaller\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "dacoto\\LaravelWizardInstaller\\Tests\\": "tests/"
+    }
+  },
+  "require": {
+    "php": "^8.1",
+    "ext-pdo": "*",
+    "illuminate/support": "^10.8",
+    "dacoto/laravel-env-set": "^1.0"
+  },
+  "require-dev": {
+    "orchestra/testbench": "^8.5",
+    "nunomaduro/larastan": "^2.6",
+    "pestphp/pest": "^2.5",
+    "pestphp/pest-plugin-laravel": "^2.0"
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "dacoto\\LaravelWizardInstaller\\LaravelWizardInstallerServiceProvider"
+      ]
+    }
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true,
+  "config": {
+    "allow-plugins": {
+      "pestphp/pest-plugin": true
+    }
+  }
+}

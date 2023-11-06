@@ -1,0 +1,27 @@
+version: 2
+updates:
+  - package-ecosystem: "composer"
+    directory: "/"
+    schedule:
+      interval: "monthly"
+    groups:
+      dependencies:
+        patterns:
+          - "*"
+    reviewers:
+      - "dacoto97"
+    commit-message:
+      prefix: "dependabot:"
+
+  - package-ecosystem: "npm"
+    directory: "/"
+    schedule:
+      interval: "monthly"
+    groups:
+      dependencies:
+        patterns:
+          - "*"
+    reviewers:
+      - "dacoto97"
+    commit-message:
+      prefix: "dependabot:"
