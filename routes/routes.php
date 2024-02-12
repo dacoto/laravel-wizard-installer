@@ -23,8 +23,8 @@ Route::group([
     Route::get('/database', ['as' => 'install.database', 'uses' => InstallDatabaseController::class]);
     Route::post('/database', ['uses' => InstallSetDatabaseController::class]);
     Route::get('/migrations', ['as' => 'install.migrations', 'uses' => InstallMigrationsController::class]);
-    Route::post('/migrations', ['as' => 'install.migrations', 'uses' => InstallSetMigrationsController::class]);
+    Route::post('/migrations', ['uses' => InstallSetMigrationsController::class]);
     Route::get('/keys', ['as' => 'install.keys', 'uses' => InstallKeysController::class]);
-    Route::post('/keys', ['as' => 'install.keys', 'uses' => InstallSetKeysController::class]);
+    Route::post('/keys', ['uses' => InstallSetKeysController::class]);
     Route::get('/finish', ['as' => 'install.finish', 'uses' => InstallFinishController::class]);
 });
