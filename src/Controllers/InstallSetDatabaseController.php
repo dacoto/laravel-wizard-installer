@@ -28,10 +28,11 @@ class InstallSetDatabaseController extends Controller
 
         try {
             $connection = new PDO(
-                sprintf('mysql:host=%s:%s;dbname=%s', $request->input('database_hostname'), $request->input('database_port'), $request->input('database_name')),
+                sprintf('mysql:host=%s;port=%s;dbname=%s', $request->input('database_hostname'), $request->input('database_port'), $request->input('database_name')),
                 $request->input('database_username'),
                 $request->input('database_password', '')
             );
+        
             $connection->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
         } catch (Exception $e) {
             return back()->withErrors($e->getMessage())->withInput();
