@@ -10,5 +10,3 @@
 ```sh
 composer require dacoto/laravel-wizard-installer
 ```
-
-Code style will be automatically fixed by php-cs-fixer.

@@ -21,13 +21,13 @@
     }
   },
   "require": {
-    "php": "^8.1",
+    "php": "^8.2",
     "ext-pdo": "*",
-    "illuminate/support": "^10.8",
-    "dacoto/laravel-env-set": "^1.0"
+    "illuminate/support": "^11.0",
+    "dacoto/laravel-env-set": "^2.0"
   },
   "require-dev": {
-    "orchestra/testbench": "^8.5",
+    "orchestra/testbench": "^9.0",
     "nunomaduro/larastan": "^2.6",
     "pestphp/pest": "^2.5",
     "pestphp/pest-plugin-laravel": "^2.0"

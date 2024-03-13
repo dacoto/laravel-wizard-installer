@@ -5,8 +5,6 @@
 /docker-compose.yml export-ignore
 /tests export-ignore
 
-/phpstan.neon export-ignore
-/.php_cs.php export-ignore
 /psalm.xml export-ignore
 /phpunit.xml export-ignore
 /check export-ignore
