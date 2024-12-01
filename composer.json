@@ -28,7 +28,7 @@
   },
   "require-dev": {
     "orchestra/testbench": "^9.0",
-    "nunomaduro/larastan": "^2.6",
+    "nunomaduro/larastan": "^2.6 || ^3.0",
     "pestphp/pest": "^2.5",
     "pestphp/pest-plugin-laravel": "^2.0"
   },
